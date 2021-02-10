@@ -1,0 +1,39 @@
+html {
+    font-family: Mali, Sriracha;
+}
+
+body {
+    background: url(https://picsum.photos/id/1014/1750/900);
+}
+.card {
+    display:inline-block;
+    box-shadow: 4px 8px 8px silver;
+    width: 300;
+    border-radius: 10px;
+    margin: 0px;
+    /* border: solid 5px; */
+    background-color: hsla(27, 97%, 64%, 0.63);
+}
+
+img {
+    /* display: block; */
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.container {
+    padding: 3px 17px;
+    text-align: center;
+    width: 330;
+    /* background-color: slateblue; */
+    /* margin: -4px 0 -1px; */
+    border-radius: 0 0 5px 5px;
+    background-color: #f001;
+    /* font-size: 1.5vw; */
+}
+h2 {
+    font-size: 3vw;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mali:ital,wght@0,400;0,700;1,700&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); */

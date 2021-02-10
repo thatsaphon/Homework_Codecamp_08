@@ -1,0 +1,434 @@
+html{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    /* background: #f0f2f5; */
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.top-background{
+    background: #f0f2f5;;
+    margin: 0;
+}
+.container {
+    display: flex;
+    width: 980px;
+    height: 496px;
+    margin: 0 auto;
+    padding: 92px 0 132px 0;
+    /* align-items: flex-start; */
+    position: relative;
+    /* text-align: center; */
+    justify-content: space-between;
+}
+
+/* .container > div {
+    flex: 1;
+} */
+
+/* .mainR {
+    display: inline-block;
+} */
+
+.login-box { /*กล่องทางขวา*/
+    display: inline-block;
+    width: 396px;
+    background: white;
+    align-items: center;
+    padding: 10px 0 24px;
+    vertical-align: top;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+}
+.mainL {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 32px;
+    width: 580px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.facebook-logo {
+    height: 106px;
+    margin: -28px;
+}
+
+.facebook-logo-box {
+    padding: 112px 0 16px;
+}
+
+.concept {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 32px;
+    padding: 0 0 20 0;
+    margin: 0;
+    display: inline-block;
+    width: 500px;
+}
+.inputtext {
+    font-size: 19px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    color: green;
+    padding: 14px 16px;
+    width: 330px;
+    border-radius: 6px;
+    margin: 6px 0;
+    border: 1px solid #dddfe2;
+    height: 22px;
+    line-height: 16px;
+    vertical-align: middle;
+    animation: rainbow-text 2.5s infinite linear;
+    animation: rainbow-background 2.5s infinite linear reverse;
+}
+.inputtext:focus {
+    border: #1877f2 1px solid;
+    outline: none;
+    animation: rainbow-border 2.5s infinite linear;
+    background-color: #fff;
+    /* animation: rainbow-background 2.5s infinite linear; */
+}
+.inputtext::placeholder {
+    color: #90949c;
+}
+.inputtext:focus::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(190, 195, 201);
+    animation: rainbow-text 2.5s infinite linear;
+}
+
+@keyframes rainbow-text{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+}
+
+@keyframes rainbow-background{
+    100%,0%{
+        background: rgb(255,0,0);
+    }
+    8%{
+        background: rgb(255,127,0);
+    }
+    16%{
+        background: rgb(255,255,0);
+    }
+    25%{
+        background: rgb(127,255,0);
+    }
+    33%{
+        background: rgb(0,255,0);
+    }
+    41%{
+        background: rgb(0,255,127);
+    }
+    50%{
+        background: rgb(0,255,255);
+    }
+    58%{
+        background: rgb(0,127,255);
+    }
+    66%{
+        background: rgb(0,0,255);
+    }
+    75%{
+        background: rgb(127,0,255);
+    }
+    83%{
+        background: rgb(255,0,255);
+    }
+    91%{
+        background: rgb(255,0,127);
+    }
+}
+
+@keyframes rainbow-border{
+    100%,0%{
+        border: 1px solid rgb(255,0,0);
+    }
+    8%{
+        border: 1px solid rgb(255,127,0);
+    }
+    16%{
+        border: 1px solid rgb(255,255,0);
+    }
+    25%{
+        border: 1px solid rgb(127,255,0);
+    }
+    33%{
+        border: 1px solid rgb(0,255,0);
+    }
+    41%{
+        border: 1px solid rgb(0,255,127);
+    }
+    50%{
+        border: 1px solid rgb(0,255,255);
+    }
+    58%{
+        border: 1px solid rgb(0,127,255);
+    }
+    66%{
+        border: 1px solid rgb(0,0,255);
+    }
+    75%{
+        border: 1px solid rgb(127,0,255);
+    }
+    83%{
+        border: 1px solid rgb(255,0,255);
+    }
+    91%{
+        border: 1px solid rgb(255,0,127);
+    }
+}
+.login-button {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 22px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 6px 0 0;
+    box-sizing: content-box;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none;
+    vertical-align: middle;
+}
+.login-button:hover {
+    background-color: #166fe5;
+}
+.login-button:active {
+    background-color: #29487d;
+    /* border-color: #29487d; */
+}
+.login-button:focus {
+    outline: none;
+}
+.forget-password {
+    color: #1877f2;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 16px;
+    display: inline-block;
+    padding: 0;
+}
+.forget-password:hover {
+    text-decoration: underline;
+}
+.seperate-line {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 16px 26px;
+    text-align: center;
+}
+.create-new-account {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 48px;
+    padding: 0 16px;
+    /* margin-top: 6px; */
+    background-color: #42b72a;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.create-new-account:hover {
+    background-color: #36a420;
+}
+.create-new-account:active {
+    background-color: #2b9217;
+}
+.create-page {
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    margin: 28px 0 0;
+    font-size: 16px;
+}
+.create-page-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: black
+}
+.create-page-link:hover {
+    text-decoration: underline;
+}
+.footer {
+    background: white;
+    padding-top: 28px;
+    width: 980px;
+    margin: auto;
+    color: #737373;
+    font-size: 14px;
+}
+li > a {
+    text-decoration: none;
+    white-space: nowrap;
+    color: #737373;
+    padding-left: 10px;
+    line-height: 1.34    ;
+}
+
+li > a:hover{
+    text-decoration: underline;
+}
+a:last-child {
+    margin: 0;
+}
+.language {
+    padding-top: 8px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.more-language-button {
+    background-color: #f5f6f7;
+    padding: 0 8px !important;
+    margin-left: 10px;
+    border: 1px #ccd0d5 solid;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    left: 10px;
+    justify-content: center;
+    box-sizing:content-box;
+    display: inline-block;
+}
+.more-language-button-picture {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/jCbQIVjK221.png);
+    background-size: 170px 88px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: -66px -70px;
+    vertical-align: middle;
+    /* position: relative; */
+    /* top: 2px; */
+}
+.contentCurve {
+    border-bottom: 1px solid #dddfe2;
+    height: 8px;
+    margin-bottom: 8px;
+}
+
+.page-footer-link-list {
+    line-height: 1.6;
+    margin-left: -10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.adchoice {
+    padding-right: 14px;
+}
+.adchoice-logo {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/jCbQIVjK221.png);
+    width: 16px;
+    height: 16px;
+    background-position: 0 -70px;
+    position: absolute;
+    margin-top: 1px;
+    vertical-align: middle;
+    background-size: 170px 88px;
+}
+.facebook-copyright {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 1075px) {
+    .container {
+        width: auto;
+        margin: 0 40px;
+    }
+    .concept {
+        font-size: 26px;
+        line-height: 28px;
+        width: auto;
+    }
+    .mainL {
+        width: 400px;
+    }
+    .footer {
+        margin: 0 40px;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0 184px 0;
+    }
+    .concept {
+        padding: 0;
+    }
+    .mainL {
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+    .facebook-logo-box {
+        padding: 0 0 20px 0;
+    }
+}
